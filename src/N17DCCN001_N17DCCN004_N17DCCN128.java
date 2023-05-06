@@ -5,10 +5,10 @@ import java.util.stream.Collectors;
 /**
  * Nhom N17DCCN001
  * NGUYEN VINH AN - N17DCCN001
- * lAM HA TUAN ANH - N17DCCN004
+ * LAM HA TUAN ANH - N17DCCN004
  * NGUYEN TIEN PHONG - N17DCCN128
  */
-public class Ir1 {
+public class N17DCCN001_N17DCCN004_N17DCCN128 {
 
     /**
      * Chi muc nguoc - reverseIndex - su dung tree map de co sap xep theo alphabet cho cac tu khi them vao
@@ -271,11 +271,15 @@ public class Ir1 {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        Ir1 ir1 = new Ir1();
-        ir1.readDocDataFromFile("D:\\IR1\\Resource\\npl\\", "doc-text");
-        ir1.readQueryDataFromFile("D:\\IR1\\Resource\\npl\\", "query-text");
-        ir1.outputTheResultFile("D:\\IR1\\src\\", "the-result.txt", false);
-        ir1.outputTheResultFile("D:\\IR1\\src\\", "the-result-with-skip-step.txt", true);
+        N17DCCN001_N17DCCN004_N17DCCN128 n17DCCN001N17DCCN004N17DCCN128 = new N17DCCN001_N17DCCN004_N17DCCN128();
+        //Doc file doc-text va mapping vao chi muc nguoc
+        n17DCCN001N17DCCN004N17DCCN128.readDocDataFromFile("D:\\IR1\\Resource\\npl\\", "doc-text");
+        //Doc file query-text
+        n17DCCN001N17DCCN004N17DCCN128.readQueryDataFromFile("D:\\IR1\\Resource\\npl\\", "query-text");
+        // Thuc hien phep giao
+        n17DCCN001N17DCCN004N17DCCN128.outputTheResultFile("D:\\IR1\\src\\", "the-result.txt", false);
+        // Thuc hien phep giao voi buoc nhay
+        n17DCCN001N17DCCN004N17DCCN128.outputTheResultFile("D:\\IR1\\src\\", "the-result-with-skip-step.txt", true);
         System.out.println("Read file Success !!");
     }
 }
